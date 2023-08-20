@@ -21,7 +21,6 @@ body {
 
 header {
     background-image: linear-gradient(to right, var(--cor1), var(--cor3));
-    min-width: 500px;
     height: 200px;
 }
 
@@ -60,16 +59,10 @@ nav > a:hover {
     transition-duration: .5s;
 }
 
-main {
-    max-width: 1400px;
-    min-width: 500px;
-    margin: auto;
-    background-color: white; 
-}
-
 main > article {
     background-color: white;
-    height: 600px;
+    min-height: 1000px;
+    max-height: 1200px;
     padding: 15px;
     text-align: justify;
     text-indent: 5px;
@@ -91,8 +84,8 @@ article div > img {
 
 aside {
     background-color: var(--cor3);
-    width: 800px;
-    height: 420px;
+    max-width: 800px;
+    max-height: 850px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
     margin: auto;
@@ -139,15 +132,14 @@ aside a:hover {
 }
 
 footer {
-    position: absolute;
     width: 100%;
-   bottom: 0px;
     background-color: black;
     color: white;
 }
 
 footer > p {
     padding: 7px;
+    margin-top: 20px;
     text-align: center;
     font-style: italic;
 }
